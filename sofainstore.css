@@ -1593,11 +1593,11 @@ a:focus, a:hover{
 
 	font-size: 13px;
 	font-weight: 500;
-	color: #27323c;
+	color: #fcfcfc;
 
 	cursor: pointer;
 
-	background-color: #00e99f;
+	background-color: #c31818;
 	border-radius: 100px;
 }
 
