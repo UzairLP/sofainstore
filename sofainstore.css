@@ -2615,7 +2615,7 @@ h2 + .latest-feedbacks {
 		border: 0;
 		border-top: 1px solid #e7e7e7;
 
-		background-image: url(images/tab-arrow-mobile.png);
+		background-image: url(assets/tab-arrow-mobile.png);
 		background-repeat: no-repeat;
 		background-position: right center;
 	}
