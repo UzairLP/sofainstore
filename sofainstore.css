@@ -3101,44 +3101,19 @@ h2 + .latest-feedbacks {
 
 /* MOBILE FIXES */
 @media (max-width: 768px) {
-  .megamenu-bar .row {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0;
-  }
-
-  .megamenu-item {
-    width: 100%;
-    padding: 12px 20px;
-    text-align: left;
-    border-bottom: 1px solid #eaeaea;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .dropdown-toggle {
-    background-image: url("assets/tab-arrow-mobile-open.png");
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 10px;
-    padding-right: 20px;
-    display: inline-block;
-    width: 100%;
-  }
-
   .megamenu-item .megamenu-dropdown {
     position: relative;
-    transform: none;
     left: auto;
     top: auto;
+    transform: none;
     width: 100%;
     box-shadow: none;
     display: none;
     padding: 0;
     opacity: 1;
     visibility: visible;
+    background: #fff;
+    z-index: 1;
   }
 
   .megamenu-item.active .megamenu-dropdown {
@@ -3146,11 +3121,17 @@ h2 + .latest-feedbacks {
   }
 
   .megamenu-dropdown a {
-    padding: 10px 20px;
+    display: block;
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    background-color: #fff;
+    text-align: left;
+    white-space: normal;
+    word-break: break-word;
   }
 
-  /* Fix alignment for first item */
-  .megamenu-item:first-child {
-    padding-left: 24px;
+  .megamenu-dropdown a:last-child {
+    border-bottom: none;
   }
 }
