@@ -3116,7 +3116,7 @@ h2 + .latest-feedbacks {
     justify-content: space-between;
     align-items: center;
     padding: 12px 20px;
-    background: #fff;
+    background: #fff; /* Consistent background with main menu */
     position: relative;
     z-index: 1;
   }
@@ -3137,7 +3137,7 @@ h2 + .latest-feedbacks {
     left: 0;
     width: 100%;
     display: none;
-    background-color: #f9f9f9;
+    background-color: #fff; /* Match main menu background */
     box-shadow: none;
     padding: 0;
     margin: 0;
@@ -3157,13 +3157,13 @@ h2 + .latest-feedbacks {
   .megamenu-dropdown a {
     display: block;
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 20px; /* Consistent padding with main menu */
     font-size: 14px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eaeaea; /* Match main menu border */
     color: #333;
     text-decoration: none;
     white-space: normal;
-    background-color: #fff;
+    background-color: #fff; /* Ensure no different background */
     box-sizing: border-box;
   }
 
