@@ -3039,6 +3039,7 @@ h2 + .latest-feedbacks {
 /*
 / Mega-Menu
 / ------------------------------ */
+/* === BASE STYLING === */
 .megamenu-bar {
   background: #f7f7f7;
   font-family: 'Poppins', sans-serif;
@@ -3046,24 +3047,18 @@ h2 + .latest-feedbacks {
   padding: 12px 0;
 }
 
-.megamenu-row {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
 .megamenu-item {
   position: relative;
-  color: #333;
-  white-space: nowrap;
   cursor: pointer;
+  color: #333;
+  padding: 10px 15px;
+  white-space: nowrap;
 }
 
 .megamenu-item:hover {
   color: #d22;
 }
 
-/* Desktop Dropdown */
 .megamenu-dropdown {
   position: absolute;
   top: 100%;
@@ -3093,18 +3088,51 @@ h2 + .latest-feedbacks {
   color: #333;
   font-weight: 400;
   transition: background 0.2s ease;
+  white-space: normal;
 }
 
 .megamenu-dropdown a:hover {
   background-color: #f2f2f2;
 }
 
-/* MOBILE FIXES */
+
+/* === MOBILE STYLING === */
 @media (max-width: 768px) {
-  .megamenu-item .megamenu-dropdown {
+  .megamenu-bar .row {
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .megamenu-item {
+    width: 100%;
+    text-align: left;
+    padding: 12px 20px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
-    left: auto;
-    top: auto;
+  }
+
+  .megamenu-item:last-child {
+    border-bottom: none;
+  }
+
+  .megamenu-item .arrow {
+    width: 16px;
+    height: 16px;
+    background-image: url('assets/tab-arrow-mobile-open.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-left: auto;
+  }
+
+  .megamenu-dropdown {
+    position: relative;
+    left: 0;
+    top: 0;
     transform: none;
     width: 100%;
     box-shadow: none;
@@ -3113,7 +3141,7 @@ h2 + .latest-feedbacks {
     opacity: 1;
     visibility: visible;
     background: #fff;
-    z-index: 1;
+    border-top: 1px solid #eee;
   }
 
   .megamenu-item.active .megamenu-dropdown {
@@ -3121,13 +3149,8 @@ h2 + .latest-feedbacks {
   }
 
   .megamenu-dropdown a {
-    display: block;
     padding: 12px 20px;
     border-bottom: 1px solid #eee;
-    color: #333;
-    background-color: #fff;
-    text-align: left;
-    white-space: normal;
     word-break: break-word;
   }
 
