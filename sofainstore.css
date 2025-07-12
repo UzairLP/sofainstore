@@ -3100,7 +3100,6 @@ h2 + .latest-feedbacks {
 }
 
 /* === MOBILE FIXES === */
-/* === MOBILE FIXES === */
 @media (max-width: 768px) {
   .megamenu-bar .row {
     display: flex;
@@ -3119,7 +3118,6 @@ h2 + .latest-feedbacks {
     padding: 12px 20px;
     background: #fff;
     position: relative;
-    font-size: 15px;
     z-index: 1;
   }
 
@@ -3128,8 +3126,9 @@ h2 + .latest-feedbacks {
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 10px;
-    flex-grow: 1;
+    flex: 1;
     padding-right: 20px;
+    box-sizing: border-box;
   }
 
   .megamenu-item .megamenu-dropdown {
@@ -3137,12 +3136,13 @@ h2 + .latest-feedbacks {
     top: 0;
     left: 0;
     width: 100%;
+    display: none;
     background-color: #f9f9f9;
     box-shadow: none;
-    display: none;
+    padding: 0;
+    margin: 0;
     opacity: 1;
     visibility: visible;
-    padding: 0;
     z-index: 0;
   }
 
@@ -3164,6 +3164,7 @@ h2 + .latest-feedbacks {
     text-decoration: none;
     white-space: normal;
     background-color: #fff;
+    box-sizing: border-box;
   }
 
   .megamenu-dropdown a:hover {
