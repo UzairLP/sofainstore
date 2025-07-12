@@ -2131,7 +2131,7 @@ a:focus, a:hover{
 		height: 19px;
 		padding: 0;
 		content: "";
-		background-image: url('images/close.png');
+		background-image: url('assets/close.png');
 		display: block;
 	}
 }
