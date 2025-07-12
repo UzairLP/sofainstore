@@ -3100,6 +3100,7 @@ h2 + .latest-feedbacks {
 }
 
 /* === MOBILE FIXES === */
+/* === MOBILE FIXES === */
 @media (max-width: 768px) {
   .megamenu-bar .row {
     display: flex;
@@ -3119,7 +3120,7 @@ h2 + .latest-feedbacks {
     background: #fff;
     position: relative;
     font-size: 15px;
-    z-index: 0;
+    z-index: 1;
   }
 
   .dropdown-toggle {
@@ -3127,7 +3128,7 @@ h2 + .latest-feedbacks {
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 10px;
-    flex: 1;
+    flex-grow: 1;
     padding-right: 20px;
   }
 
@@ -3136,13 +3137,13 @@ h2 + .latest-feedbacks {
     top: 0;
     left: 0;
     width: 100%;
-    display: none;
     background-color: #f9f9f9;
-    padding: 0;
+    box-shadow: none;
+    display: none;
     opacity: 1;
     visibility: visible;
-    box-shadow: none;
-    z-index: 1;
+    padding: 0;
+    z-index: 0;
   }
 
   .megamenu-item.active .megamenu-dropdown {
@@ -3155,14 +3156,15 @@ h2 + .latest-feedbacks {
 
   .megamenu-dropdown a {
     display: block;
+    width: 100%;
     padding: 12px 20px;
     font-size: 14px;
     border-bottom: 1px solid #eee;
     color: #333;
     text-decoration: none;
     white-space: normal;
-    width: 100%;
     box-sizing: border-box;
+    background-color: #fff;
   }
 
   .megamenu-dropdown a:hover {
