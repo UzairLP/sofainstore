@@ -3046,12 +3046,17 @@ h2 + .latest-feedbacks {
   padding: 12px 0;
 }
 
+.megamenu-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
 .megamenu-item {
   position: relative;
-  cursor: pointer;
   color: #333;
-  padding: 10px 5px;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .megamenu-item:hover {
@@ -3072,7 +3077,7 @@ h2 + .latest-feedbacks {
   transition: all 0.3s ease;
   padding: 10px 0;
   z-index: 999;
-  text-align: left; /* Force left-align in desktop */
+  text-align: left;
 }
 
 .megamenu-item:hover .megamenu-dropdown {
@@ -3094,54 +3099,58 @@ h2 + .latest-feedbacks {
   background-color: #f2f2f2;
 }
 
-/* Mobile styles */
+/* MOBILE FIXES */
 @media (max-width: 768px) {
   .megamenu-bar .row {
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     align-items: stretch;
+    gap: 0;
   }
 
   .megamenu-item {
     width: 100%;
     padding: 12px 20px;
-    border-bottom: 1px solid #eaeaea;
     text-align: left;
+    border-bottom: 1px solid #eaeaea;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .megamenu-item:last-child {
-    border-bottom: none;
-  }
-
-  .megamenu-item .dropdown-toggle {
+  .dropdown-toggle {
     background-image: url("assets/tab-arrow-mobile-open.png");
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: 16px;
+    background-size: 10px;
+    padding-right: 20px;
+    display: inline-block;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
-  .megamenu-dropdown {
+  .megamenu-item .megamenu-dropdown {
     position: relative;
+    transform: none;
     left: auto;
     top: auto;
-    transform: none;
     width: 100%;
     box-shadow: none;
     display: none;
+    padding: 0;
     opacity: 1;
     visibility: visible;
-    padding: 0;
-    text-align: left;
   }
 
   .megamenu-item.active .megamenu-dropdown {
     display: block;
+  }
+
+  .megamenu-dropdown a {
+    padding: 10px 20px;
+  }
+
+  /* Fix alignment for first item */
+  .megamenu-item:first-child {
+    padding-left: 24px;
   }
 }
