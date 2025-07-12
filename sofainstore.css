@@ -2626,7 +2626,7 @@ h2 + .latest-feedbacks {
 	.tabs #tab-control-4:checked ~ label[for="tab-control-4"],
 	.tabs #tab-control-5:checked ~ label[for="tab-control-5"],
 	.tabs #tab-control-6:checked ~ label[for="tab-control-6"]{
-		background-image: url(images/tab-arrow-mobile-open.png);
+		background-image: url(assets/tab-arrow-mobile-open.png);
 		border-bottom: 0;
 	}
 }
