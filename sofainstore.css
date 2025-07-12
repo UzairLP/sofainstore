@@ -3036,9 +3036,8 @@ h2 + .latest-feedbacks {
 .copyright img{
 	margin-top: 4px;
 }
-/*
-/ Mega-Menu
-/ ------------------------------ */
+/* Mega-Menu */
+/* ------------------------------ */
 /* === BASE STYLING === */
 .megamenu-bar {
   background: #f7f7f7;
@@ -3117,6 +3116,7 @@ h2 + .latest-feedbacks {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
   }
 
   .dropdown-toggle {
@@ -3148,9 +3148,13 @@ h2 + .latest-feedbacks {
 
   .megamenu-dropdown a {
     padding: 10px 20px;
+    white-space: normal;
   }
 
-  /* Fix alignment for first item */
+  .megamenu-dropdown {
+    text-align: left;
+  }
+
   .megamenu-item:first-child {
     padding-left: 24px;
   }
