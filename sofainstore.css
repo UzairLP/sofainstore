@@ -3163,7 +3163,6 @@ h2 + .latest-feedbacks {
     color: #333;
     text-decoration: none;
     white-space: normal;
-    box-sizing: border-box;
     background-color: #fff;
   }
 
