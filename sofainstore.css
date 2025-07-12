@@ -3036,3 +3036,109 @@ h2 + .latest-feedbacks {
 .copyright img{
 	margin-top: 4px;
 }
+.megamenu-bar {
+  background: #f7f7f7;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 12px 0;
+}
+
+.megamenu-item {
+  position: relative;
+  cursor: pointer;
+  color: #333;
+  padding: 10px 5px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.megamenu-item:hover {
+  color: #dd2222;
+}
+
+.megamenu-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  width: 240px;
+  background: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  padding: 10px 0;
+  z-index: 999;
+}
+
+.megamenu-item:hover .megamenu-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.megamenu-dropdown a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  transition: background 0.2s ease;
+}
+
+.megamenu-dropdown a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .megamenu-bar .row {
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .megamenu-item {
+    width: 100%;
+    text-align: left;
+    padding: 12px 20px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .megamenu-item.has-dropdown .dropdown-toggle {
+    background-image: url(assets/tab-arrow-mobile-open.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+  }
+
+  .megamenu-dropdown {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    box-shadow: none;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    padding: 0;
+  }
+
+  .megamenu-item.active .megamenu-dropdown {
+    display: block;
+  }
+
+  .megamenu-item:hover .megamenu-dropdown {
+    /* disable desktop hover fallback in mobile */
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+}
