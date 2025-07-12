@@ -3111,12 +3111,11 @@ h2 + .latest-feedbacks {
   .megamenu-item {
     width: 100%;
     text-align: left;
-    border-bottom: 1px solid #eaeaea;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 20px;
-    background: #fff; /* Consistent background with main menu */
+    background: #fff;
     position: relative;
     z-index: 1;
   }
@@ -3137,7 +3136,7 @@ h2 + .latest-feedbacks {
     left: 0;
     width: 100%;
     display: none;
-    background-color: #fff; /* Match main menu background */
+    background-color: #fff;
     box-shadow: none;
     padding: 0;
     margin: 0;
@@ -3157,13 +3156,12 @@ h2 + .latest-feedbacks {
   .megamenu-dropdown a {
     display: block;
     width: 100%;
-    padding: 12px 20px; /* Consistent padding with main menu */
+    padding: 12px 20px;
     font-size: 14px;
-    border-bottom: 1px solid #eaeaea; /* Match main menu border */
     color: #333;
     text-decoration: none;
     white-space: normal;
-    background-color: #fff; /* Ensure no different background */
+    background-color: #fff;
     box-sizing: border-box;
   }
 
