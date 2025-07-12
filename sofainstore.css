@@ -3123,22 +3123,22 @@ h2 + .latest-feedbacks {
     background-image: url("assets/tab-arrow-mobile-open.png");
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: 10px;
-    padding-right: 20px;
+    background-size: 10px 10px;
+    padding-right: 24px;
     flex-grow: 1;
   }
 
   .megamenu-item .megamenu-dropdown {
+    display: none;
+    width: 100%;
+    background: #fff;
+    padding: 0;
+    box-shadow: none;
     position: relative;
     left: 0;
     top: 0;
-    width: 100%;
-    box-shadow: none;
-    display: none;
-    padding: 0;
     opacity: 1;
     visibility: visible;
-    background-color: #f9f9f9;
   }
 
   .megamenu-item.active .megamenu-dropdown {
@@ -3147,15 +3147,19 @@ h2 + .latest-feedbacks {
 
   .megamenu-dropdown a {
     display: block;
-    padding: 12px 20px;
+    padding: 12px 24px;
     font-size: 14px;
-    border-bottom: 1px solid #eee;
     color: #333;
     text-decoration: none;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .megamenu-dropdown a:last-child {
+    border-bottom: none;
   }
 
   .megamenu-dropdown a:hover {
-    background-color: #f2f2f2;
+    background-color: #f7f7f7;
   }
 
   .megamenu-item:first-child {
