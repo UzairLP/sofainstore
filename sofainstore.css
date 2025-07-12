@@ -3098,7 +3098,8 @@ h2 + .latest-feedbacks {
 .megamenu-dropdown a:hover {
   background-color: #f2f2f2;
 }
-/* MOBILE FIXES */
+
+/* === MOBILE FIXES === */
 @media (max-width: 768px) {
   .megamenu-bar .row {
     display: flex;
@@ -3118,6 +3119,7 @@ h2 + .latest-feedbacks {
     background: #fff;
     position: relative;
     font-size: 15px;
+    z-index: 0;
   }
 
   .dropdown-toggle {
@@ -3131,14 +3133,14 @@ h2 + .latest-feedbacks {
 
   .megamenu-item .megamenu-dropdown {
     position: relative;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     display: none;
-    opacity: 1;
-    visibility: visible;
     background-color: #f9f9f9;
     padding: 0;
+    opacity: 1;
+    visibility: visible;
     box-shadow: none;
     z-index: 1;
   }
@@ -3159,6 +3161,8 @@ h2 + .latest-feedbacks {
     color: #333;
     text-decoration: none;
     white-space: normal;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .megamenu-dropdown a:hover {
