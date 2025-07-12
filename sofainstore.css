@@ -3046,16 +3046,44 @@ h2 + .latest-feedbacks {
   padding: 12px 0;
 }
 
+.megamenu-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .megamenu-item {
   position: relative;
   cursor: pointer;
   color: #333;
-  padding: 10px 5px;
+  padding: 10px 15px;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
 
 .megamenu-item:hover {
   color: #d22;
+}
+
+.megamenu-item.has-dropdown .dropdown-toggle {
+  position: relative;
+  padding-right: 24px;
+}
+
+.megamenu-item.has-dropdown .dropdown-toggle::after {
+  content: '';
+  background-image: url(assets/tab-arrow-mobile-open.png);
+  background-repeat: no-repeat;
+  background-size: 12px;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .megamenu-dropdown {
@@ -3071,6 +3099,7 @@ h2 + .latest-feedbacks {
   transition: all 0.3s ease;
   padding: 10px 0;
   z-index: 999;
+  text-align: left;
 }
 
 .megamenu-item:hover .megamenu-dropdown {
@@ -3086,38 +3115,29 @@ h2 + .latest-feedbacks {
   color: #333;
   font-weight: 400;
   transition: background 0.2s ease;
+  text-align: left;
 }
 
 .megamenu-dropdown a:hover {
   background-color: #f2f2f2;
 }
 
-/* Dropdown toggler row (label + arrow) */
-.megamenu-toggle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 20px;
-}
-
-/* Mobile Styling */
 @media (max-width: 768px) {
-  .megamenu-bar .row {
+  .megamenu-row {
     flex-direction: column;
-    display: flex;
     align-items: stretch;
   }
 
   .megamenu-item {
-    width: 100%;
-    text-align: left;
+    justify-content: space-between;
     border-bottom: 1px solid #eaeaea;
+    padding: 12px 20px;
+    text-align: left;
   }
 
   .megamenu-dropdown {
-    position: relative;
+    position: static;
     transform: none;
-    width: 100%;
     box-shadow: none;
     display: none;
     opacity: 1;
@@ -3127,15 +3147,5 @@ h2 + .latest-feedbacks {
 
   .megamenu-item.active .megamenu-dropdown {
     display: block;
-  }
-
-  .dropdown-toggle {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('assets/tab-arrow-mobile-open.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 10px;
   }
 }
