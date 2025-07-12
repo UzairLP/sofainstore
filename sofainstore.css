@@ -3036,6 +3036,9 @@ h2 + .latest-feedbacks {
 .copyright img{
 	margin-top: 4px;
 }
+/*
+/ Mega-Menu
+/ ------------------------------ */
 .megamenu-bar {
   background: #f7f7f7;
   font-family: 'Poppins', sans-serif;
@@ -3049,11 +3052,10 @@ h2 + .latest-feedbacks {
   color: #333;
   padding: 10px 5px;
   white-space: nowrap;
-  text-align: center;
 }
 
 .megamenu-item:hover {
-  color: #dd2222;
+  color: #d22;
 }
 
 .megamenu-dropdown {
@@ -3090,7 +3092,15 @@ h2 + .latest-feedbacks {
   background-color: #f2f2f2;
 }
 
-/* Mobile Styles */
+/* Dropdown toggler row (label + arrow) */
+.megamenu-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+/* Mobile Styling */
 @media (max-width: 768px) {
   .megamenu-bar .row {
     flex-direction: column;
@@ -3101,27 +3111,11 @@ h2 + .latest-feedbacks {
   .megamenu-item {
     width: 100%;
     text-align: left;
-    padding: 12px 20px;
     border-bottom: 1px solid #eaeaea;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .megamenu-item.has-dropdown .dropdown-toggle {
-    background-image: url(assets/tab-arrow-mobile-open.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 14px;
-    width: 16px;
-    height: 16px;
-    display: inline-block;
   }
 
   .megamenu-dropdown {
     position: relative;
-    top: auto;
-    left: auto;
     transform: none;
     width: 100%;
     box-shadow: none;
@@ -3135,10 +3129,13 @@ h2 + .latest-feedbacks {
     display: block;
   }
 
-  .megamenu-item:hover .megamenu-dropdown {
-    /* disable desktop hover fallback in mobile */
-    opacity: 1;
-    visibility: visible;
-    transform: none;
+  .dropdown-toggle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('assets/tab-arrow-mobile-open.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10px;
   }
 }
