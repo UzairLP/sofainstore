@@ -3111,9 +3111,6 @@ h2 + .latest-feedbacks {
   .megamenu-item {
     width: 100%;
     text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 12px 20px;
     background: #fff;
     position: relative;
