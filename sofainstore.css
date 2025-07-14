@@ -3100,3 +3100,42 @@ h2 + .latest-feedbacks {
 }
 
 /* === MOBILE FIXES === */
+@media (max-width: 768px) {
+  .megamenu-item .megamenu-dropdown {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    background-color: #fff;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    visibility: visible;
+    z-index: 0;
+  }
+
+  .megamenu-item.active .megamenu-dropdown {
+    display: block;
+  }
+
+  .megamenu-dropdown a {
+    display: block;
+    width: 100%;
+    padding: 12px 20px; /* Consistent with main menu, adjusted for viewport */
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    white-space: normal;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin: 0; /* Reset margin */
+    overflow: hidden; /* Prevent text overflow */
+    text-align: left; /* Ensure left alignment within bounds */
+  }
+
+  .megamenu-dropdown a:hover {
+    background-color: #f2f2f2;
+  }
+}
