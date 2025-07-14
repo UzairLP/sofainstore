@@ -3106,12 +3106,14 @@ h2 + .latest-feedbacks {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
+    padding: 0;
+    margin: 0;
   }
 
   .megamenu-item {
     width: 100%;
     text-align: left;
-    border-bottom: 1px solid #eaeaea; /* Restored for main menu separation */
+    border-bottom: 1px solid #eaeaea;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -3168,7 +3170,6 @@ h2 + .latest-feedbacks {
     box-sizing: border-box;
     margin: 0;
     overflow: hidden; /* Prevent text overflow */
-    border-bottom: 1px solid #eaeaea; /* Optional: Add back if you want sub-menu separation */
   }
 
   .megamenu-dropdown a:hover {
