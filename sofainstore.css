@@ -3100,80 +3100,50 @@ h2 + .latest-feedbacks {
 }
 
 /* === MOBILE FIXES === */
-/* === MOBILE FIXES === */
 @media (max-width: 768px) {
-  /* Row container stays default */
-  .megamenu-bar .row,
-  .megamenu-row {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 0;
+  .megamenu-bar .row {
+    display: block;
     margin: 0;
+    padding: 0;
   }
 
-  /* Each menu item */
   .megamenu-item {
+    display: block;
     width: 100%;
-    text-align: left;
+    padding: 0;
     border-bottom: 1px solid #eaeaea;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 20px;
-    background: #fff;
-    position: relative;
-    font-size: 15px;
-    box-sizing: border-box;
+    background-color: #fff;
   }
 
-  .megamenu-item:first-child {
-    padding-left: 24px;
-  }
-
-  /* Toggle arrow */
   .dropdown-toggle {
+    padding: 12px 20px;
     background-image: url("assets/tab-arrow-mobile-open.png");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 10px;
-    flex: 1;
-    padding-right: 20px;
-    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    display: block;
     cursor: pointer;
-  }
-
-  /* Dropdown shown on toggle */
-  .megamenu-item .megamenu-dropdown {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: none;
-    background-color: #f9f9f9;
-    box-shadow: none;
-    padding: 0;
-    margin: 0;
-    z-index: 0;
-    text-align: left;
   }
 
   .megamenu-item.active .megamenu-dropdown {
     display: block;
   }
 
-  /* Dropdown links */
+  .megamenu-dropdown {
+    display: none;
+    background-color: #f9f9f9;
+  }
+
   .megamenu-dropdown a {
     display: block;
-    width: 100%;
     padding: 12px 20px;
-    font-size: 14px;
+    border-top: 1px solid #eee;
     color: #333;
     text-decoration: none;
-    white-space: normal;
-    background-color: #fff;
-    box-sizing: border-box;
-    border-bottom: 1px solid #eee;
+    font-size: 14px;
   }
 
   .megamenu-dropdown a:hover {
