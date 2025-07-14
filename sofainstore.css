@@ -3049,7 +3049,7 @@ h2 + .latest-feedbacks {
 .megamenu-row {
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 80px;
 }
 
 .megamenu-item {
