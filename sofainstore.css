@@ -3100,3 +3100,66 @@ h2 + .latest-feedbacks {
 }
 
 /* === MOBILE FIXES === */
+@media (max-width: 768px) {
+  .megamenu-bar {
+    width: 100%;
+    background: #fff;
+  }
+
+  .megamenu-row {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .megamenu-item {
+    width: 100%;
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background: #fff;
+    font-size: 15px;
+  }
+
+  .dropdown-toggle {
+    background-image: url("assets/tab-arrow-mobile-open.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 10px;
+    padding-right: 20px;
+    flex: 1;
+    cursor: pointer;
+  }
+
+  .megamenu-item .megamenu-dropdown {
+    display: none;
+    width: 100%;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: left;
+  }
+
+  .megamenu-item.active .megamenu-dropdown {
+    display: block;
+  }
+
+  .megamenu-dropdown a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+    white-space: normal;
+    background: #fff;
+  }
+
+  .megamenu-dropdown a:hover {
+    background-color: #f2f2f2;
+  }
+}
