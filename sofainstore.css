@@ -3101,6 +3101,37 @@ h2 + .latest-feedbacks {
 
 /* === MOBILE FIXES === */
 @media (max-width: 768px) {
+  .megamenu-bar .row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .megamenu-item {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea; /* Restored for main menu separation */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+
+  .dropdown-toggle {
+    background-image: url("assets/tab-arrow-mobile-open.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 10px;
+    flex: 1;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
   .megamenu-item .megamenu-dropdown {
     position: relative;
     top: 0;
@@ -3120,22 +3151,31 @@ h2 + .latest-feedbacks {
     display: block;
   }
 
+  .megamenu-dropdown {
+    text-align: left;
+    width: 100%;
+  }
+
   .megamenu-dropdown a {
     display: block;
     width: 100%;
-    padding: 12px 20px; /* Consistent with main menu, adjusted for viewport */
+    padding: 12px 20px;
     font-size: 14px;
     color: #333;
     text-decoration: none;
     white-space: normal;
     background-color: #fff;
     box-sizing: border-box;
-    margin: 0; /* Reset margin */
+    margin: 0;
     overflow: hidden; /* Prevent text overflow */
-    text-align: left; /* Ensure left alignment within bounds */
+    border-bottom: 1px solid #eaeaea; /* Optional: Add back if you want sub-menu separation */
   }
 
   .megamenu-dropdown a:hover {
     background-color: #f2f2f2;
+  }
+
+  .megamenu-item:first-child {
+    padding-left: 24px;
   }
 }
