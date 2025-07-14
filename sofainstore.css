@@ -3101,60 +3101,56 @@ h2 + .latest-feedbacks {
 
 /* === MOBILE FIXES === */
 @media (max-width: 768px) {
-  .container,
   .megamenu-bar .container {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
     padding: 0 !important;
+    margin: 0 auto !important;
+    width: 100% !important;
   }
 
-  .megamenu-bar .row,
   .megamenu-row {
     display: flex !important;
     flex-direction: column !important;
-    align-items: stretch !important;
     width: 100% !important;
-    margin: 0 !important;
     padding: 0 !important;
+    margin: 0 !important;
   }
 
   .megamenu-item {
-    width: 100% !important;
     display: flex !important;
-    justify-content: space-between !important;
     align-items: center !important;
-    text-align: left !important;
-    border-bottom: 1px solid #eaeaea !important;
-    background: #fff !important;
+    justify-content: space-between !important;
+    width: 100% !important;
     padding: 12px 20px !important;
-    position: relative !important;
+    background: #fff !important;
+    border-bottom: 1px solid #eaeaea !important;
+    font-size: 15px !important;
     box-sizing: border-box !important;
-  }
-
-  .dropdown-toggle {
-    flex: 1 !important;
-    padding-right: 20px !important;
-    background-image: url("assets/tab-arrow-mobile-open.png") !important;
-    background-repeat: no-repeat !important;
-    background-position: right center !important;
-    background-size: 10px !important;
-    cursor: pointer !important;
+    position: relative !important;
   }
 
   .megamenu-item:first-child {
     padding-left: 24px !important;
   }
 
-  .megamenu-item .megamenu-dropdown {
+  .dropdown-toggle {
+    flex-grow: 1 !important;
+    background-image: url("assets/tab-arrow-mobile-open.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: right center !important;
+    background-size: 10px !important;
+    padding-right: 20px !important;
+    cursor: pointer !important;
+  }
+
+  .megamenu-dropdown {
     display: none !important;
-    position: relative !important;
     width: 100% !important;
-    background-color: #fff !important;
-    padding: 0 !important;
+    background: #fff !important;
     margin: 0 !important;
+    padding: 0 !important;
     border: none !important;
     box-shadow: none !important;
+    position: relative !important;
   }
 
   .megamenu-item.active .megamenu-dropdown {
@@ -3166,9 +3162,8 @@ h2 + .latest-feedbacks {
     padding: 12px 20px !important;
     font-size: 14px !important;
     color: #333 !important;
-    text-decoration: none !important;
     border-bottom: 1px solid #eee !important;
-    white-space: normal !important;
+    text-decoration: none !important;
     background: #fff !important;
     box-sizing: border-box !important;
   }
