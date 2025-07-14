@@ -3036,3 +3036,67 @@ h2 + .latest-feedbacks {
 .copyright img{
 	margin-top: 4px;
 }
+/* Mega-Menu */
+/* ------------------------------ */
+/* === BASE STYLING === */
+.megamenu-bar {
+  background: #f7f7f7;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 12px 0;
+}
+
+.megamenu-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.megamenu-item {
+  position: relative;
+  color: #333;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.megamenu-item:hover {
+  color: #d22;
+}
+
+/* Desktop Dropdown */
+.megamenu-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  width: 240px;
+  background: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  padding: 10px 0;
+  z-index: 999;
+  text-align: left;
+}
+
+.megamenu-item:hover .megamenu-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.megamenu-dropdown a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  transition: background 0.2s ease;
+}
+
+.megamenu-dropdown a:hover {
+  background-color: #f2f2f2;
+}
+
+/* === MOBILE FIXES === */
