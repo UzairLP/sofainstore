@@ -3101,62 +3101,31 @@ h2 + .latest-feedbacks {
 
 /* === MOBILE FIXES === */
 @media (max-width: 768px) {
-  .megamenu-bar {
-    display: block;
-  }
-
-  .megamenu-row {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .megamenu-item {
-    width: 100%;
-    padding: 12px 20px;
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    font-size: 16px;
-    position: relative;
-    box-sizing: border-box;
-  }
-
-  .megamenu-item.has-dropdown .dropdown-toggle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    width: 100%;
-    background-image: url("assets/tab-arrow-mobile-open.png");
-    background-repeat: no-repeat;
-    background-position: right 16px center;
-    background-size: 10px;
-    padding-right: 30px;
-  }
-
   .megamenu-dropdown {
     display: none;
-    background: #f9f9f9;
+    position: static;
     width: 100%;
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
     box-shadow: none;
-    position: static; /* <--- this is the fix */
+    flex-direction: column; /* 🟢 Force vertical stack */
   }
 
   .megamenu-item.active .megamenu-dropdown {
-    display: block;
+    display: flex; /* 🟢 Instead of block, so children obey flex-direction */
   }
 
   .megamenu-dropdown a {
     display: block;
+    width: 100%;
     padding: 12px 20px;
-    color: #333;
-    font-size: 14px;
-    text-decoration: none;
     border-bottom: 1px solid #eee;
-    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+    box-sizing: border-box;
   }
 
   .megamenu-dropdown a:hover {
