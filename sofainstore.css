@@ -3047,10 +3047,11 @@ h2 + .latest-feedbacks {
   font-family: 'Poppins', sans-serif;
 }
 
-.megamenu-container {
-  width: 100%; /* Ensure it spans the full width */
-  /* Add containment by ensuring no overflow and proper context */
-  overflow: hidden; /* Prevents content from spilling out */
+.container {
+  width: 100%;
+  /* Reset any potential padding or margin from the eBay template */
+  padding: 0;
+  margin: 0;
 }
 
 nav {
@@ -3068,13 +3069,20 @@ nav {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centers the menu */
-  gap: 80px;
-  padding: 15px 0;
+  justify-content: center; /* Horizontally centers the menu */
+  align-items: center; /* Vertically centers the menu items */
+  gap: 80px; /* Spacing between items */
+  padding: 5px 0; /* Reduced padding to control height */
+  /* Ensure no inherited height or alignment issues */
+  min-height: 0;
+  height: auto;
 }
 
 .nav-links li {
   position: relative;
+  /* Reset any inherited padding or margin */
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links a,
@@ -3083,11 +3091,14 @@ nav {
   font-size: 16px;
   color: #333;
   cursor: pointer;
-  display: inline-block;
-  padding: 8px 12px;
+  display: flex; /* Use flex to center text and arrow */
+  align-items: center; /* Vertically centers text and arrow */
+  justify-content: center; /* Horizontally centers text within the flex item */
+  padding: 4px 12px; /* Consistent padding for height */
   font-weight: 500;
-  width: 100%;
   transition: all 0.3s ease;
+  /* Reset width to avoid stretching */
+  width: auto;
 }
 
 .nav-links a:hover,
@@ -3100,7 +3111,7 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 240px;
+  min-width: 240px; /* Increased to accommodate longer dropdown content */
   background: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
   z-index: 1000;
@@ -3169,15 +3180,26 @@ nav {
     flex-direction: column;
     gap: 0;
     padding: 0;
+    /* Reset any inherited styles from container */
+    margin: 0;
+    padding-top: 0 !important; /* Override any template padding */
   }
 
   .nav-links li {
     border-bottom: 1px solid #eaeaea;
+    width: 100%; /* Ensure full width in mobile */
+    /* Reset any inherited padding or margin */
+    padding: 0;
+    margin: 0;
   }
 
   .dropdown-toggle {
-    padding: 12px 20px;
+    padding: 8px 20px; /* Consistent padding for height */
     position: relative;
+    display: flex; /* Use flex to center text and arrow */
+    align-items: center; /* Vertically centers text and arrow */
+    justify-content: space-between; /* Align text to left and arrow to right */
+    width: 100%; /* Ensure full width */
   }
 
   /* Add arrow for mobile dropdown */
@@ -3212,7 +3234,7 @@ nav {
   #showDrop2:checked + .dropdown-toggle + .drop-menu {
     opacity: 1;
     visibility: visible;
-    max-height: 400px;
+    max-height: 400px; /* Increased to accommodate more dropdown items */
     position: static;
     box-shadow: none;
     transform: translateY(0);
@@ -3225,15 +3247,19 @@ nav {
     overflow: hidden;
     transform: translateY(0);
     transition: max-height 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+    width: 100%; /* Ensure full width in mobile */
   }
 
   .drop-menu a {
-    padding: 12px 20px;
+    padding: 10px 20px;
   }
 
   .nav-links a {
-    padding: 12px 20px;
-    display: block;
+    padding: 8px 20px; /* Consistent padding for height */
+    display: flex; /* Use flex to center text */
+    align-items: center; /* Vertically centers text */
+    justify-content: flex-start; /* Align text to left */
+    width: 100%; /* Ensure full width */
     font-size: 16px;
   }
 }
