@@ -1617,7 +1617,7 @@ a:focus, a:hover{
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: 25px 25px;
-	padding: 5px 0 5px 25px;
+	padding: 5px 0 5px 30px;
 }
 
 #selling-points figure > div:nth-of-type(1) .icon,
