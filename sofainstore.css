@@ -3047,7 +3047,7 @@ h2 + .latest-feedbacks {
   font-family: 'Poppins', sans-serif;
 }
 
-.container {
+.megamenu-container {
   width: 100%;
   /* Reset any potential padding or margin from the eBay template */
   padding: 0;
