@@ -3049,6 +3049,9 @@ h2 + .latest-feedbacks {
 
 .container {
   width: 100%;
+  /* Reset any potential padding or margin from the eBay template */
+  padding: 0;
+  margin: 0;
 }
 
 nav {
@@ -3070,10 +3073,16 @@ nav {
   align-items: center; /* Vertically centers the menu items */
   gap: 80px; /* Spacing between items */
   padding: 5px 0; /* Reduced padding to control height */
+  /* Ensure no inherited height or alignment issues */
+  min-height: 0;
+  height: auto;
 }
 
 .nav-links li {
   position: relative;
+  /* Reset any inherited padding or margin */
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links a,
@@ -3082,11 +3091,14 @@ nav {
   font-size: 16px;
   color: #333;
   cursor: pointer;
-  display: flex; /* Changed to flex to center text and arrow */
+  display: flex; /* Use flex to center text and arrow */
   align-items: center; /* Vertically centers text and arrow */
+  justify-content: center; /* Horizontally centers text within the flex item */
   padding: 4px 12px; /* Consistent padding for height */
   font-weight: 500;
   transition: all 0.3s ease;
+  /* Reset width to avoid stretching */
+  width: auto;
 }
 
 .nav-links a:hover,
@@ -3168,17 +3180,26 @@ nav {
     flex-direction: column;
     gap: 0;
     padding: 0;
+    /* Reset any inherited styles from container */
+    margin: 0;
+    padding-top: 0 !important; /* Override any template padding */
   }
 
   .nav-links li {
     border-bottom: 1px solid #eaeaea;
+    width: 100%; /* Ensure full width in mobile */
+    /* Reset any inherited padding or margin */
+    padding: 0;
+    margin: 0;
   }
 
   .dropdown-toggle {
     padding: 8px 20px; /* Consistent padding for height */
     position: relative;
-    display: flex; /* Changed to flex to center text and arrow */
+    display: flex; /* Use flex to center text and arrow */
     align-items: center; /* Vertically centers text and arrow */
+    justify-content: space-between; /* Align text to left and arrow to right */
+    width: 100%; /* Ensure full width */
   }
 
   /* Add arrow for mobile dropdown */
@@ -3226,6 +3247,7 @@ nav {
     overflow: hidden;
     transform: translateY(0);
     transition: max-height 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+    width: 100%; /* Ensure full width in mobile */
   }
 
   .drop-menu a {
@@ -3234,8 +3256,10 @@ nav {
 
   .nav-links a {
     padding: 8px 20px; /* Consistent padding for height */
-    display: block; /* Changed to block for mobile stack */
-    font-size: 16px;
+    display: flex; /* Use flex to center text */
     align-items: center; /* Vertically centers text */
+    justify-content: flex-start; /* Align text to left */
+    width: 100%; /* Ensure full width */
+    font-size: 16px;
   }
 }
