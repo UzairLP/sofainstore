@@ -3047,8 +3047,10 @@ h2 + .latest-feedbacks {
   font-family: 'Poppins', sans-serif;
 }
 
-.container {
-  width: 100%;
+.megamenu-container {
+  width: 100%; /* Ensure it spans the full width */
+  /* Add containment by ensuring no overflow and proper context */
+  overflow: hidden; /* Prevents content from spilling out */
 }
 
 nav {
@@ -3066,10 +3068,9 @@ nav {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Horizontally centers the menu */
-  align-items: center; /* Vertically centers the menu items */
-  gap: 80px; /* Spacing between items */
-  padding: 5px 0; /* Reduced padding to control height */
+  justify-content: center; /* Centers the menu */
+  gap: 80px;
+  padding: 15px 0;
 }
 
 .nav-links li {
@@ -3082,10 +3083,10 @@ nav {
   font-size: 16px;
   color: #333;
   cursor: pointer;
-  display: flex; /* Changed to flex to center text and arrow */
-  align-items: center; /* Vertically centers text and arrow */
-  padding: 4px 12px; /* Consistent padding for height */
+  display: inline-block;
+  padding: 8px 12px;
   font-weight: 500;
+  width: 100%;
   transition: all 0.3s ease;
 }
 
@@ -3099,7 +3100,7 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 240px; /* Increased to accommodate longer dropdown content */
+  min-width: 240px;
   background: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
   z-index: 1000;
@@ -3175,10 +3176,8 @@ nav {
   }
 
   .dropdown-toggle {
-    padding: 8px 20px; /* Consistent padding for height */
+    padding: 12px 20px;
     position: relative;
-    display: flex; /* Changed to flex to center text and arrow */
-    align-items: center; /* Vertically centers text and arrow */
   }
 
   /* Add arrow for mobile dropdown */
@@ -3213,7 +3212,7 @@ nav {
   #showDrop2:checked + .dropdown-toggle + .drop-menu {
     opacity: 1;
     visibility: visible;
-    max-height: 400px; /* Increased to accommodate more dropdown items */
+    max-height: 400px;
     position: static;
     box-shadow: none;
     transform: translateY(0);
@@ -3229,13 +3228,12 @@ nav {
   }
 
   .drop-menu a {
-    padding: 10px 20px;
+    padding: 12px 20px;
   }
 
   .nav-links a {
-    padding: 8px 20px; /* Consistent padding for height */
-    display: block; /* Changed to block for mobile stack */
+    padding: 12px 20px;
+    display: block;
     font-size: 16px;
-    align-items: center; /* Vertically centers text */
   }
 }
