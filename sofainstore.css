@@ -3230,7 +3230,7 @@ nav {
 
   .nav-links a {
     padding: 8px 20px; /* Consistent padding for height */
-    display: flex; /* Changed to block for mobile stack */
+    display: block; /* Changed to block for mobile stack */
     font-size: 16px;
     align-items: center; /* Vertically centers text */
   }
