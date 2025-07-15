@@ -3038,6 +3038,8 @@ h2 + .latest-feedbacks {
 }
 /* Mega-Menu */
 /* ------------------------------ */
+/* Mega-Menu */
+/* ------------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
@@ -3045,6 +3047,10 @@ h2 + .latest-feedbacks {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
 }
 
 nav {
@@ -3063,8 +3069,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Centers the menu */
-  gap: 80px;
-  padding: 15px 0;
+  gap: 80px; /* Reduced if needed, but kept for spacing */
+  padding: 5px 0; /* Reduced from 15px to 5px to lower height */
 }
 
 .nav-links li {
@@ -3078,7 +3084,7 @@ nav {
   color: #333;
   cursor: pointer;
   display: inline-block;
-  padding: 8px 12px;
+  padding: 4px 12px; /* Reduced from 8px to 4px to lower height */
   font-weight: 500;
   width: 100%;
   transition: all 0.3s ease;
@@ -3170,7 +3176,7 @@ nav {
   }
 
   .dropdown-toggle {
-    padding: 12px 20px;
+    padding: 8px 20px; /* Reduced from 12px to 8px to lower height */
     position: relative;
   }
 
@@ -3222,11 +3228,11 @@ nav {
   }
 
   .drop-menu a {
-    padding: 12px 20px;
+    padding: 10px 20px;
   }
 
   .nav-links a {
-    padding: 12px 20px;
+    padding: 8px 20px; /* Reduced from 12px to 8px to lower height */
     display: block;
     font-size: 16px;
   }
