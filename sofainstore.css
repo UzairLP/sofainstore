@@ -3055,7 +3055,7 @@ nav {
 .wrapper {
   max-width: 1000px;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 20px; /* Inner padding to adjust within the container */
 }
 
 .nav-links {
@@ -3078,11 +3078,13 @@ nav {
   font-size: 16px;
   color: #333;
   cursor: pointer;
-  display: flex; /* Changed to flex to center text and arrow */
+  display: flex; /* Use flex to center text and arrow */
   align-items: center; /* Vertically centers text and arrow */
   padding: 4px 12px; /* Consistent padding for height */
   font-weight: 500;
   transition: all 0.3s ease;
+  /* Ensure no stretching or misalignment */
+  width: auto;
 }
 
 .nav-links a:hover,
@@ -3164,17 +3166,22 @@ nav {
     flex-direction: column;
     gap: 0;
     padding: 0;
+    /* Override container padding to match standalone */
+    margin: 0 -15px; /* Counteract the main container's padding */
   }
 
   .nav-links li {
     border-bottom: 1px solid #eaeaea;
+    width: 100%; /* Ensure full width */
   }
 
   .dropdown-toggle {
-    padding: 8px 20px; /* Consistent padding for height */
+    padding: 8px 20px; /* Consistent padding */
     position: relative;
-    display: flex; /* Changed to flex to center text and arrow */
+    display: flex; /* Use flex to center text and arrow */
     align-items: center; /* Vertically centers text and arrow */
+    justify-content: space-between; /* Align text left, arrow right */
+    width: 100%; /* Full width */
   }
 
   /* Add arrow for mobile dropdown */
@@ -3213,6 +3220,7 @@ nav {
     position: static;
     box-shadow: none;
     transform: translateY(0);
+    width: 100%; /* Ensure full width */
   }
 
   /* Mobile-specific dropdown styles */
@@ -3222,6 +3230,7 @@ nav {
     overflow: hidden;
     transform: translateY(0);
     transition: max-height 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+    width: 100%; /* Full width */
   }
 
   .drop-menu a {
@@ -3229,9 +3238,11 @@ nav {
   }
 
   .nav-links a {
-    padding: 8px 20px; /* Consistent padding for height */
-    display: block; /* Changed to block for mobile stack */
-    font-size: 16px;
+    padding: 8px 20px; /* Consistent padding */
+    display: flex; /* Use flex to center text */
     align-items: center; /* Vertically centers text */
+    justify-content: flex-start; /* Align text left */
+    width: 100%; /* Full width */
+    font-size: 16px;
   }
 }
