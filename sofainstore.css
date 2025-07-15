@@ -3082,10 +3082,10 @@ nav {
   font-size: 16px;
   color: #333;
   cursor: pointer;
-  display: inline-block;
-  padding: 4px 12px; /* Reduced padding to control height */
+  display: flex; /* Changed to flex to center text and arrow */
+  align-items: center; /* Vertically centers text and arrow */
+  padding: 4px 12px; /* Consistent padding for height */
   font-weight: 500;
-  width: 100%;
   transition: all 0.3s ease;
 }
 
@@ -3175,8 +3175,10 @@ nav {
   }
 
   .dropdown-toggle {
-    padding: 8px 20px; /* Reduced padding to control height */
+    padding: 8px 20px; /* Consistent padding for height */
     position: relative;
+    display: flex; /* Changed to flex to center text and arrow */
+    align-items: center; /* Vertically centers text and arrow */
   }
 
   /* Add arrow for mobile dropdown */
@@ -3231,8 +3233,9 @@ nav {
   }
 
   .nav-links a {
-    padding: 8px 20px; /* Reduced padding to control height */
-    display: block;
+    padding: 8px 20px; /* Consistent padding for height */
+    display: block; /* Changed to block for mobile stack */
     font-size: 16px;
+    align-items: center; /* Vertically centers text */
   }
 }
