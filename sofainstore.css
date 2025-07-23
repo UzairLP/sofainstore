@@ -3320,10 +3320,3 @@ h2 + .latest-feedbacks {
     box-sizing: border-box;
   }
 }
-
-/* Hide Menu In Mobile Devices */
-@media (max-width: 1023.98px) {
-  .mega-wrapper {
-    display: none;
-  }
-}
