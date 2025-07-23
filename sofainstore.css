@@ -1,4 +1,4 @@
-/* Combined CSS: layout.css + default.css */
+		/* Combined CSS: layout.css + default.css */
 
 /*!
  * Bootstrap v4.0.0-alpha.3 (http://getbootstrap.com)
@@ -3318,11 +3318,5 @@ h2 + .latest-feedbacks {
   .mega-wrapper .drop-menu a {
     width: 100%;
     box-sizing: border-box;
-  }
-}
-/* Hide Menu In Mobile Devices */
-@media (max-width: 1023.98px) {
-  .mega-wrapper {
-    display: none;
   }
 }
