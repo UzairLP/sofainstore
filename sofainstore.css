@@ -1806,13 +1806,13 @@ a:focus, a:hover{
 }
 
 .images > label.left{
-	background-image: url(images/arrow-left.png);
+	background-image: url(assets/arrow-left.png);
 }
 
 .images > label.right {
   right: 0;
 	left: auto;
-	background-image: url(images/arrow-right.png);
+	background-image: url(assets/arrow-right.png);
 }
 
 .images > input:checked + label{
