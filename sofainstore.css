@@ -1437,6 +1437,17 @@ a:focus, a:hover{
 .images > input#push3:checked ~ div > .image-scroll {
   margin-left: -816px !important; /* Adjust to image width */
 }
+/* Ensure image scroll container width and overflow are set */
+.image-container .image-scroll {
+  width: 100% !important; /* Ensure it spans the entire width */
+  overflow: hidden !important; /* Ensure scrolling happens within bounds */
+}
+
+/* If image sizes vary, you can also explicitly set the width */
+.image-container .image-scroll .image {
+  width: 408px !important; /* Adjust to match image size */
+  display: inline-block !important; /* Ensure images display in a row */
+}
 
 .img-responsive{
   display: inline-block;
