@@ -1420,6 +1420,23 @@ a:focus, a:hover{
 /*
 / Images
 / ------------------------------ */
+/* Override for image scroll to match margin-left */
+.images > input[name="push"]:checked ~ div > .image-scroll {
+  transition: margin-left 0.5s ease; /* Smooth transition when switching images */
+}
+
+/* Adjust margin-left based on image widths dynamically */
+.images > input#push1:checked ~ div > .image-scroll {
+  margin-left: 0 !important; /* Ensure first image is shown without shift */
+}
+
+.images > input#push2:checked ~ div > .image-scroll {
+  margin-left: -408px !important; /* Adjust to image width */
+}
+
+.images > input#push3:checked ~ div > .image-scroll {
+  margin-left: -816px !important; /* Adjust to image width */
+}
 
 .img-responsive{
   display: inline-block;
