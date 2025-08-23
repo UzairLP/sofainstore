@@ -1,13 +1,13 @@
 .latest-feedbacks { display: block; }
 .latest-feedbacks .feedback:nth-of-type(1) { display: block; }
-.latest-feedbacks .feedback:nth-of-type(1) .title:before{ content: "NutriBullet 600 Series Starter Kit 600W 5 Piece Blender Set - RRP Â£49.99"; } 
-.latest-feedbacks .feedback:nth-of-type(1) .price:before{ content: "38.99"; } 
+.latest-feedbacks .feedback:nth-of-type(1) .title:before{ content: "SOFAINSTORE Red Leather Chesterfield Sofa Set – 3+2 Seater | Buttoned, Vintage S"; } 
+.latest-feedbacks .feedback:nth-of-type(1) .price:before{ content: "1,199.00"; } 
 .latest-feedbacks .feedback:nth-of-type(1) .icon{ background-image: url('https://sf.elist.store/listingtemplates-feedback/rating-positive.png'); }
 .latest-feedbacks .feedback:nth-of-type(1) .rating:before{ content: "Positive"; }
-.latest-feedbacks .feedback:nth-of-type(1) .name:before{ content: "a***5"; }
-.latest-feedbacks .feedback:nth-of-type(1) .score:before{ content: "409"; }
-.latest-feedbacks .feedback:nth-of-type(1) .date:before{ content: "2/28/2022"; }
-.latest-feedbacks .feedback:nth-of-type(1) .description:before{ content: "All excellent"; }
+.latest-feedbacks .feedback:nth-of-type(1) .name:before{ content: "h***l"; }
+.latest-feedbacks .feedback:nth-of-type(1) .score:before{ content: "1615"; }
+.latest-feedbacks .feedback:nth-of-type(1) .date:before{ content: "7/28/2025"; }
+.latest-feedbacks .feedback:nth-of-type(1) .description:before{ content: "Beautiful sofas very comfortable thank you"; }
 
 
 .latest-feedbacks .feedback:nth-of-type(2) { display: block; }
@@ -327,3 +327,4 @@
 .latest-feedbacks .feedback:nth-of-type(30) .score:before{ content: "511"; }
 .latest-feedbacks .feedback:nth-of-type(30) .date:before{ content: "2/28/2022"; }
 .latest-feedbacks .feedback:nth-of-type(30) .description:before{ content: "Great value sofa and very fast delivery. Was super pleased and impressed with the company!"; }
+
