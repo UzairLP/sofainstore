@@ -4,21 +4,21 @@
 .latest-feedbacks .feedback:nth-of-type(1) .price:before{ content: "1,199.00"; } 
 .latest-feedbacks .feedback:nth-of-type(1) .icon{ background-image: url('https://sf.elist.store/listingtemplates-feedback/rating-positive.png'); }
 .latest-feedbacks .feedback:nth-of-type(1) .rating:before{ content: "Positive"; }
-.latest-feedbacks .feedback:nth-of-type(1) .name:before{ content: "h***l"; }
+.latest-feedbacks .feedback:nth-of-type(1) .name:before{ content: "hippygirl1958"; }
 .latest-feedbacks .feedback:nth-of-type(1) .score:before{ content: "1615"; }
 .latest-feedbacks .feedback:nth-of-type(1) .date:before{ content: "7/28/2025"; }
 .latest-feedbacks .feedback:nth-of-type(1) .description:before{ content: "Beautiful sofas very comfortable thank you"; }
 
 
 .latest-feedbacks .feedback:nth-of-type(2) { display: block; }
-.latest-feedbacks .feedback:nth-of-type(2) .title:before{ content: "Cox & Cox Modern Silver Steel Glass Three Tier Drinks Trolley Shelves - RRP Â£450"; } 
-.latest-feedbacks .feedback:nth-of-type(2) .price:before{ content: ""; } 
+.latest-feedbacks .feedback:nth-of-type(2) .title:before{ content: "SOFAINSTORE Belmont Grey Genuine Leather 3 Seater Sofa – Plush & Durable - RRP £719.97"; } 
+.latest-feedbacks .feedback:nth-of-type(2) .price:before{ content: "719.97"; } 
 .latest-feedbacks .feedback:nth-of-type(2) .icon{ background-image: url('https://sf.elist.store/listingtemplates-feedback/rating-positive.png'); }
 .latest-feedbacks .feedback:nth-of-type(2) .rating:before{ content: "Positive"; }
-.latest-feedbacks .feedback:nth-of-type(2) .name:before{ content: "b***b"; }
-.latest-feedbacks .feedback:nth-of-type(2) .score:before{ content: "783"; }
-.latest-feedbacks .feedback:nth-of-type(2) .date:before{ content: "2/28/2022"; }
-.latest-feedbacks .feedback:nth-of-type(2) .description:before{ content: "Very fast delivery, would purchase again and item lovelyâ€¦Thanks"; }
+.latest-feedbacks .feedback:nth-of-type(2) .name:before{ content: "qd6jg-21"; }
+.latest-feedbacks .feedback:nth-of-type(2) .score:before{ content: "130"; }
+.latest-feedbacks .feedback:nth-of-type(2) .date:before{ content: "7/18/2025"; }
+.latest-feedbacks .feedback:nth-of-type(2) .description:before{ content: "Very happy well worth paying for genuine leather great delivery"; }
 
 
 .latest-feedbacks .feedback:nth-of-type(3) { display: block; }
@@ -327,5 +327,6 @@
 .latest-feedbacks .feedback:nth-of-type(30) .score:before{ content: "511"; }
 .latest-feedbacks .feedback:nth-of-type(30) .date:before{ content: "2/28/2022"; }
 .latest-feedbacks .feedback:nth-of-type(30) .description:before{ content: "Great value sofa and very fast delivery. Was super pleased and impressed with the company!"; }
+
 
 
